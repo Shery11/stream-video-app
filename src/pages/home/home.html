@@ -1,14 +1,47 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
+    <ion-title text-center>
+        <img src="assets/imgs/header.png">
+
+
+      
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+ 
+  <button *ngFor="let button of buttons" ion-item (click)="openDetails(button.key)">
+    {{button.buttonText}}
+  </button>
+
+
+  <img src="assets/imgs/Pole.png" class="poleCenter">
+    
+  <img src="assets/imgs/B1.png" class="b1">
+  <img src="assets/imgs/B2.png" class="b2">
+  <img src="assets/imgs/B3.png" class="b1">
+  <img src="assets/imgs/B4.png" class="b2">
+  <img src="assets/imgs/B5.png" class="b1">
+  <img src="assets/imgs/B6.png" class="b2">
+
+  
+ 
 </ion-content>
+
+
+
+<!-- <ion-grid>
+  <ion-row >
+    <ion-col>
+      <img src="assets/imgs/solar.png" >
+    </ion-col>
+    <ion-col>
+      <img src="assets/imgs/happy.png" >
+    </ion-col>
+  </ion-row>
+   <ion-row>
+     <button ion-button full round color="dark" >Start now, 5 min away</button>
+
+   </ion-row>
+</ion-grid> -->
