@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 import * as firebase from 'firebase';
@@ -28,6 +28,8 @@ export class DetailsPage {
   videoUrl : string;
   data: any;
 
+  @ViewChild('videoPlayer') mVideoPlayer: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams,private videoPlayer: VideoPlayer,private streamingMedia: StreamingMedia) {
      
      this.key =  this.navParams.get('key');
@@ -38,6 +40,10 @@ export class DetailsPage {
 
             this.data = snapShot.val();
 
+            // let video = this.mVideoPlayer.nativeElement;
+            // video.src = this.data.videoLink;
+            // video.play();
+
 
      })
 
@@ -45,8 +51,21 @@ export class DetailsPage {
 
   }
 
+
+  // ionViewWillEnter(){
+  //   let video = this.mVideoPlayer.nativeElement;
+  //   video.src = http://techslides.com/demos/sample-videos/small.mp4;
+  //   video.play();
+  // }
+
   ionViewDidLoad() {
+
+    this.videoUrl = 'http://techslides.com/demos/sample-videos/small.mp4';
+
     console.log('ionViewDidLoad DetailsPage');
+    let video = this.mVideoPlayer.nativeElement;
+    video.src = this.videoUrl;
+    video.play();
   }
 
 
