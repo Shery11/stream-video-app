@@ -52,20 +52,14 @@ export class DetailsPage {
   }
 
 
-  // ionViewWillEnter(){
-  //   let video = this.mVideoPlayer.nativeElement;
-  //   video.src = http://techslides.com/demos/sample-videos/small.mp4;
-  //   video.play();
-  // }
-
   ionViewDidLoad() {
 
-    this.videoUrl = 'http://techslides.com/demos/sample-videos/small.mp4';
+    this.videoUrl = this.data.videoLink;
 
     console.log('ionViewDidLoad DetailsPage');
     let video = this.mVideoPlayer.nativeElement;
     video.src = this.videoUrl;
-    video.play();
+    // video.play();
   }
 
 
@@ -88,15 +82,5 @@ export class DetailsPage {
   }
 
 
-
-  streamVideo(){
-    let options: StreamingVideoOptions = {
-      successCallback: () => { alert('Video played') },
-      errorCallback: (e) => { alert('Error streaming') },
-      orientation: 'portrait'
-    };
-    
-    this.streamingMedia.playVideo('http://techslides.com/demos/sample-videos/small.mp4', options);
-  }
 
 }
