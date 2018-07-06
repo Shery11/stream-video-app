@@ -13,6 +13,7 @@ export class HomePage {
 
 
   buttons;
+  dataAvailable = false;
 
   constructor(public navCtrl: NavController) {
 
@@ -37,7 +38,7 @@ export class HomePage {
           	videoLink : snapshot.val()[key].videoLink
           });
         }
-
+        this.dataAvailable = true;
         console.log(this.buttons);
    	 },(err)=>{
         alert("unbale to load data")
@@ -53,6 +54,11 @@ export class HomePage {
 
     this.navCtrl.push(DetailsPage,{key:key});
 
+   }
+
+
+   clicked(){
+     console.log("clicked");
    }
 
 
