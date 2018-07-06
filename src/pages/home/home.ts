@@ -24,7 +24,7 @@ export class HomePage {
    	 firebase.database().ref('buttons/').on('value',(snapshot)=>{
         console.log(snapshot.val());
 
-        alert("data loaded");
+        // alert("data loaded");
         
         this.buttons = [];
 

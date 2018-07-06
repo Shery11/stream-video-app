@@ -23,6 +23,12 @@ page-home {
         position: relative;
         margin-left: auto;
         margin-right: auto;
+        background-image: url('../assets/imgs/B1.png');
+        width:250px;
+        height:90px;
+        z-index: 10;
+        background-repeat: no-repeat;
+        background-position: center; 
     }
 
     .b2 {
@@ -30,7 +36,22 @@ page-home {
         display: block;
         position: relative;
         margin-left: auto;
-        margin-right: 80px;
+        margin-right: 70px;
+        background-image: url('../assets/imgs/B2.png');
+        width:250px;
+        height:90px;
+        z-index: 10;
+        background-repeat: no-repeat;
+        background-position: center; 
+    
+    }
+
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     // .b3 {
