@@ -15,10 +15,13 @@ page-home {
         position: fixed;
         left: 40%;
         bottom: 0px;
+        height: 750px;
     }
 
+
     .b1 {
-        top: 4%;
+        // top: %;
+        margin-top: 20px;
         display: block;
         position: relative;
         margin-left: auto;
@@ -26,21 +29,22 @@ page-home {
         background-image: url('../assets/imgs/Arrow.png');
         width:250px;
         height:90px;
-        z-index: 10;
+        z-index: 1;
         background-repeat: no-repeat;
         background-position: center; 
     }
 
     .b2 {
-        top: 4%;
+        // top: 4%;
         display: block;
+        margin-top: 20px;
         position: relative;
         margin-left: auto;
         margin-right: 60px;
         background-image: url('../assets/imgs/ArrowInverted.png');
         width:250px;
         height:90px;
-        z-index: 10;
+        z-index: 1;
         background-repeat: no-repeat;
         background-position: center; 
     

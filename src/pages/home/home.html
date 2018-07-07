@@ -14,30 +14,35 @@
   <!-- <button *ngFor="let button of buttons" ion-item (click)="openDetails(button.key)">
     {{button.buttonText}}
   </button> -->
-<div *ngIf="dataAvailable">
-   <div class="b1" >
-      <h5 *ngIf="buttons[0]"  class="centeredRight" (click)="openDetails(buttons[0].key)">{{buttons[0].buttonText}}</h5>
-   </div>
-   <div class="b2">
-      <h5 *ngIf="buttons[1]" class="centeredLeft" (click)="openDetails(buttons[1].key)">{{buttons[1].buttonText}}</h5> 
-  </div>
-  <div class="b1">
-      <h5 *ngIf="buttons[2]" class="centeredRight" (click)="openDetails(buttons[2].key)">{{buttons[2].buttonText}}</h5> 
-  </div>
-  <div class="b2">
-      <h5 *ngIf="buttons[3]" class="centeredLeft" (click)="openDetails(buttons[3].key)">{{buttons[3].buttonText}}</h5>
-  </div>
-  <div class="b1">
-      <h5 *ngIf="buttons[4]" class="centeredRight" (click)="openDetails(buttons[4].key)">{{buttons[4].buttonText}}</h5>
-  </div>
-  <div class="b2">
-      <h5 *ngIf="buttons[5]" class="centeredLeft" (click)="openDetails(buttons[5].key)">{{buttons[5].buttonText}}</h5>
-  </div>
+<span *ngIf="dataAvailable">
+  
+  <div class="b1" >
+    <h5 *ngIf="buttons[0]"  class="centeredRight" (click)="openDetails(buttons[0].key)">{{buttons[0].buttonText}}</h5>
+ </div>
 
- </div> 
+ <div class="b2">
+    <h5 *ngIf="buttons[1]" class="centeredLeft" (click)="openDetails(buttons[1].key)">{{buttons[1].buttonText}}</h5> 
+</div>
+<div class="b1">
+    <h5 *ngIf="buttons[2]" class="centeredRight" (click)="openDetails(buttons[2].key)">{{buttons[2].buttonText}}</h5> 
+</div>
+<div class="b2">
+    <h5 *ngIf="buttons[3]" class="centeredLeft" (click)="openDetails(buttons[3].key)">{{buttons[3].buttonText}}</h5>
+</div>
+<div class="b1">
+    <h5 *ngIf="buttons[4]" class="centeredRight" (click)="openDetails(buttons[4].key)">{{buttons[4].buttonText}}</h5>
+</div>
+<div class="b2">
+    <h5 *ngIf="buttons[5]" class="centeredLeft" (click)="openDetails(buttons[5].key)">{{buttons[5].buttonText}}</h5>
+</div>
 
 
-  <img src="assets/imgs/Pole.png" class="poleCenter">
+ </span> 
+
+
+ 
+
+  <!-- <img src="assets/imgs/Pole.png" class="poleCenter"> -->
     
   <!-- <img src="assets/imgs/B1.png" class="b1">
   <img src="assets/imgs/B2.png" class="b2">
@@ -50,19 +55,3 @@
  
 </ion-content>
 
-
-
-<!-- <ion-grid>
-  <ion-row >
-    <ion-col>
-      <img src="assets/imgs/solar.png" >
-    </ion-col>
-    <ion-col>
-      <img src="assets/imgs/happy.png" >
-    </ion-col>
-  </ion-row>
-   <ion-row>
-     <button ion-button full round color="dark" >Start now, 5 min away</button>
-
-   </ion-row>
-</ion-grid> -->
